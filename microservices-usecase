@@ -1,0 +1,14 @@
+# Camunda enables Process as a Service at R+V Versicherung   https://camunda.com/case-study/rv/
+Increasingly, insurance companies are leveraging technology to better react to industry trends and developments. In order to remain one step ahead of competitors, R+V Versicherung AG has redesigned its BPM architecture with Camunda and is now able to develop, update, and operate its process applications locally. This increased agility means new requirements can be responded to more quickly and can immediately contribute to the company’s success.
+
+Greater agility creates added value
+Before implementing Camunda, keeping all automated business processes up to date was always a challenge for an insurance company of this size – the old, monolithic software solution with three BPM environments was too inflexible. For example, it took months of preparation to perform a release change, as many manual tests needed to be carried out and environments needed to be completely rebuilt. Additionally, the update process was associated with system failures, which had a negative impact on the customer experience. As a result, release changes were only carried out every few years, with smaller updates of the BPM software several times a year.
+
+These days, Jörg Ziegelmayer, R+V’s product manager for all BPM engines, supports new releases several times a month with virtually no downtime. In the new microservices environment, this is done locally in the respective specialist teams that develop and operate the applications. The new development paradigm facilitates an agile approach and a productive DevOps culture, which in turn enables a shorter time-to-market for new services. In this way, R+V’s IT strategy greatly contributes to the corporate goals.
+
+Open architecture enables easy integration
+Open architecture also plays a vital role in R+V Versicherung’s transformation, as it allows various other architecture and frameworks (microservices, applications developed in-house, etc.) to be integrated with ease. On the R+V customer and sales agent user interfaces, standardized web interfaces interact directly with the automated back-end processes. The same applies to insurance broker programs that work with R+V’s BPM processes – creating a claim, automatically generating a claim number, or orchestrating the functional process- ing behind it, for example. A large part of these processes is fully automated: the proportion of black box processing in businesses has significantly increased.
+
+Camunda therefore fits seamlessly into R+V’s current IT strategy which, like many modern architectures, is cloud based.
+
+Because Camunda scales better than the previous BPM solution, peak loads can be absorbed more easily for example when there are heavy losses after a weather event or when customers are increasingly comparing prices and want to change their insurance company.
