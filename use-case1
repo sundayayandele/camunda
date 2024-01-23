@@ -1,0 +1,48 @@
+# https://camunda.com/blog/2023/09/top-benefits-event-driven-business-process-orchestration/
+If you’re a software developer or application architect, you’re probably familiar with event stream processing tools such as Apache Kafka. These types of tools have become many developers’ default choice when building real-time data streaming applications and distributed systems.
+
+The Camunda workflow and decision engine, Zeebe, also uses event-streaming technology. Its distributed architecture enables us to deliver secure, scalable process orchestration that pairs well with event stream processing tools for high-throughput use cases such as global real-time payments.
+
+Let’s look at a few ways your business processes can benefit from the use of an event-driven approach to process orchestration.
+
+#1
+Process orchestration lets you mix automated tasks with human work
+Business processes often involve work that needs to be done by people, and when you can combine that work with automated tasks, you get a truly end-to-end view of a process and all of the paths it might take.
+
+For example, imagine a loan application process that’s mostly automated with microservices. In the process, applicants with a credit score over 700 are automatically approved, and those with a score below 600 are automatically rejected. When an applicant has a credit score between 601 and 699, a loan officer must review the application and manually approve or reject it; then after their review, the process should resume automated tasks such as updating the CRM database and notifying the applicant.
+
+Modeling and executing this type of process with a process orchestration solution that uses BPMN is easy, and combining automated and manual work in one flow means the lending department has a realistic picture of the entire loan application process.
+
+Bpmn-automation-human-tasks
+
+#2
+Process modeling allows you to visualize and analyze processes from the business’s point of view
+An event stream processing tool such as Kafka can automate tasks that need to be done, but it doesn’t put those tasks into a business context. A process modeling language such as BPMN allows you to graphically model processes from end to end, including what happens before and after the event stream processing tool executes its tasks.
+
+A true graphical representation of what is happening in a distributed system is a gift that keeps on giving. At design time, it makes collaboration between business and IT teams much easier because everyone can visualize the entire flow of the process. And it can benefit running processes, too.
+
+For example, in Camunda Operate, we use the BPMN process visualization to show users everything that’s happening (and anything that’s going wrong) in the context of the business process. Camunda Optimize uses the same visualization to provide a heatmap of process execution data from both Camunda and Kafka to analyze performance and highlight opportunities for improvement in a way that’s easy for both business users and technical users to understand.
+
+#3
+Process orchestration centralizes decision-making
+Process orchestration solutions such as Camunda are designed to make decisions about what should happen in a business process and then take the appropriate actions. This means that decision-making responsibility can be removed from places it doesn’t belong, like in an event stream processing tool or in the microservices that are being orchestrated. Also, when decision-making is centralized in one place, it’s easier to make changes to accommodate evolving technical and/or business requirements.
+
+#4
+Process orchestration centralizes error handling
+Sometimes a process stalls or fails because of a technical error; for example, a microservice fails to complete its task or becomes unavailable. In these situations, a process orchestration solution such as Camunda can notify administrators or help desk personnel that something has gone wrong, and Camunda Operate provides tools to help them mitigate or resolve the incident.
+
+Because the process orchestration tool provides the business process context, depending on the issue, people who aren’t experts in technologies such as Kafka might be able to resolve the issue on their own. For example, at some Camunda clients, first-line help desk personnel regularly help their company’s customers get unstuck by editing variables and modifying process instances on the fly.
+
+#5
+BPMN gives you more flexibility for handling unhappy paths
+Sometimes unfortunate things happen in business processes; for example, a bank transfer fails, a customer’s identity can’t be verified, or the data needed to file an insurance claim is incomplete. BPMN provides many ways to gracefully handle scenarios that might otherwise stop a process in its tracks.
+
+What’s even better is that BPMN allows business stakeholders to define how unhappy paths are handled; for example, if a customer’s payment fails, a business analyst or low-code developer can use BPMN to model how the failure should be communicated to the customer and what should happen next (such as offering the customer the chance to try a different payment method).
+
+#6
+BPMN provides out-of-the-box documentation of business processes
+If you work in a highly regulated industry such as financial services or insurance, you know that process documentation is no joke. Internal auditors and regulatory bodies want to see the controls that are in place to help teams manage financial transactions, prevent fraud, comply with anti-money laundering regulations, protect consumer data, and more.
+
+In the age of digital transformation, documenting business processes is difficult because they often involve many different tools and systems. While event streaming tools are great at executing automated work, they’re not aware of business activities that happen in other tools or systems, so they can’t be used to document a business process from start to finish.
+
+BPMN doesn’t just document the end-to-end process; it does so in a way that an auditor can easily read and understand. Plus, with BPMN, what you see is what you execute; so instead of outdated Word documents or Visio diagrams, you have documentation that always reflects the way processes actually run—not to mention the resulting process execution data to match
